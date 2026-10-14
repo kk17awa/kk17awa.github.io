@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | My Portfolio</title>
+    <style>
+        /* 1. 全域樣式設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7e6e6; /* 類似 TVCHANY 的夢幻淡粉色背景 */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #4a3b3b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 2. 主卡片容器 */
+        .container {
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        /* 3. 招牌插圖/GIF 區塊 */
+        .main-art {
+            width: 100%;
+            height: auto;
+            border-radius: 12px; /* 圓角效果 */
+            box-shadow: 0 8px 24px rgba(220, 170, 170, 0.4); /* 柔和的粉色陰影 */
+            transition: transform 0.3s ease;
+        }
+
+        /* 滑鼠懸停在圖片上時的微動效 */
+        .main-art:hover {
+            transform: scale(1.02);
+        }
+
+        /* 4. 文字內容 */
+        h1 {
+            font-size: 1.8rem;
+            margin: 20px 0 5px 0;
+            letter-spacing: 2px;
+            color: #3a2a2a;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #a68a8a;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #615050;
+        }
+
+        /* 5. 按鈕選單區塊 */
+        .links-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* 按鈕之間的間距 */
+        }
+
+        /* 單個按鈕樣式 */
+        .link-btn {
+            display: block;
+            padding: 14px;
+            background-color: #ffffff;
+            color: #5c4c4c;
+            text-decoration: none;
+            border-radius: 30px; /* 膠囊形狀按鈕 */
+            font-size: 0.95rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: 1px solid #ebdada;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* 滑鼠懸停在按鈕上的效果 */
+        .link-btn:hover {
+            background-color: #5c4c4c;
+            color: #ffffff;
+            border-color: #5c4c4c;
+            transform: translateY(-2px); /* 輕微向上浮動 */
+            box-shadow: 0 4px 12px rgba(92, 76, 76, 0.2);
+        }
+
+        /* 頁尾微小版權字 */
+        footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #c2abab;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 💡 替換成你的插畫檔名或線上圖片 URL (例如：your-art.gif) -->
+        <img src="https://picsum.photos" alt="Main Artwork" class="main-art">
+
+        <!-- 名字與標題 -->
+        <h1>YOUR NAME</h1>
+        <div class="subtitle">Illustrator & Animator</div>
+
+        <!-- 簡短自我介紹 -->
+        <p class="description">
+            這裡寫一兩句你的簡介。例如：擅長夢幻復古風格的像素畫與短篇動畫。喜歡用色彩訴說神祕世界的故事。
+        </p>
+
+        <!-- 點擊連結選單 (Link in bio) -->
+        <div class="links-menu">
+            <a href="https://x.com/" target="_blank" class="link-btn">𝕏 (TWITTER)</a>
+            <a href="https://www.instagram.com/" target="_blank" class="link-btn">INSTAGRAM</a>
+            <a href="https://www.youtube.com/" target="_blank" class="link-btn">YOUTUBE</a>
+            <a href="https://yourshop.com" target="_blank" class="link-btn">ONLINE STORE</a>
+        </div>
+
+        <footer>
+            © 2026 YOUR NAME. ALL RIGHTS RESERVED.
+        </footer>
+    </div>
+
+</body>
+</html>
